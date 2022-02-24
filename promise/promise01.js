@@ -3,8 +3,8 @@
 // state: pending -> fufilled or rejected
 // producer(promise) vs consumer
 
-// 1. producer, Promise => resolse, rejected. 
-// When new Promise is created -> params : executor runs automatically
+// 1. producer, Promise => resolve, rejected. 
+// When a new Promise is created -> params : executor runs automatically
 const promise = new Promise((resolve, reject) => {
   // doing some heavy work (network, read files)
   console.log('do something...');
