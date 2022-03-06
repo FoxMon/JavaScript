@@ -58,3 +58,4 @@ console.log(getValue2());
 // object binding -> expected: what?
 const test = getValue2.bind(person);
 console.log(test());
+console.log(getValue2.call(person));
