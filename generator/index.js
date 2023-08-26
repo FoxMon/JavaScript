@@ -19,3 +19,18 @@ console.log(...gen);
 
 gen.next();
 gen.next();
+
+// map
+function* map(collection, mapper) {
+  for (const value of collection) {
+    yield mapper(value);
+  }
+}
+
+const nums = [1, 2, 3, 4, 5];
+const result = map(nums, (value) => {
+  return value * value;
+});
+
+console.log(`result: ${result.next().value}`);
+console.log(`result: ${result.next().value}`);
