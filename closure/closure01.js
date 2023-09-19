@@ -22,3 +22,11 @@ function foo2() {
 foo();
 // expected what?
 foo2();
+
+function foo3() {
+  return function () {
+    return 1;
+  };
+}
+
+console.log(foo3()());
