@@ -43,6 +43,14 @@ class Core {
       target.appendChild(child);
     });
   }
+
+  static add(target, elem) {
+    if (!elem) {
+      return;
+    }
+
+    target.append(elem);
+  }
 }
 
 export default Core;
